@@ -11,36 +11,36 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="flex justify-between items-start lg:items-center p-6 md:p-10 lg:p-12 ">
             <!-- Nav-logo  -->
-            <span><a href="#">Startup 3</a></span>
+            <span class="w-auto"><a href="#" class=" text-[18px] lg:text-[24px] font-[500] font-gilroy_semibold">Startup 3</a></span>
             <!-- Nav-menu  -->
-            <div>
+            <div class="w-[70%] lg:w-[65%] relative">
                 <!-- Menu List  -->
-                <div>
+                <div id="navList" class="hidden absolute lg:static top-0 right-0 lg:flex justify-between items-center w-[100%]  font-gilroy_semibold mt-16 lg:mt-0 p-8 lg:p-0 bg-slate-300/95 rounded-md lg:bg-transparent lg:text-[#15143966]">
                     <!-- Nav ul  -->
-                    <ul>
+                    <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-12">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Shop</a></li>
-                        <li><a href="#" title="Search"><i class='bx bx-search-alt-2'></i></a></li>
+                        <li><a href="#" title="Search" class="text-[20px] flex lg:hidden gap-1 items-center "><input type="search" name="search" id="" class="text-[12px] px-4 py-1 rounded-md " placeholder="Search"><i class='bx bx-search'></i></a></li>
                     </ul>
                     <!-- Nav buttons  -->
-                     <div>
-                        <button type="button">Sign In</button>
-                        <button type="button">Sign In</button>
+                    <div class=" mt-16 lg:mt-0 flex flex-col lg:flex-row lg:space-x-4">
+                        <button type="button" class=" bg-slate-400 ring-2 lg:ring-0 lg:bg-transparent px-6 py-1 lg:py-2 rounded-md">Sign In</button>
+                        <button type="button" class="bg-[#25DAC5] text-white px-6 py-1 lg:py-2 rounded-md lg:rounded-full mt-4 lg:mt-0">Sign In</button>
                     </div>
                 </div>
                 <!-- Menu Icons  -->
-                <div>
+                <div id="menuIcon" class="block lg:hidden text-[35px] md:text-[45px] absolute right-0 top-0 ">
                     <!-- Show icon  -->
-                    <button type="button" title="Menu">
-                        <i class='bx bx-menu'></i>
+                    <button id="showMenu" type="button" title="Menu">
+                        <i class='bx bx-menu ring-1 ring-slate-900 rounded-md bg-slate-300'></i>
                     </button>
                     <!-- Close icon  -->
-                    <button type="button" title="Close Menu">
-                        <i class='bx bx-x'></i>
+                    <button id="closeMenu" type="button" title="Close Menu" class="hidden">
+                        <i class='bx bx-x ring-1 ring-slate-900 rounded-md bg-slate-400 text-red-950'></i>
                     </button>
                 </div>
             </div>
