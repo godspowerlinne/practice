@@ -17,7 +17,7 @@
             <button title="Close Headers" id="closeHeaderIcon" class='bx bx-exit text-[34px] p-2 bg-slate-400/60 hover:bg-slate-300/60 text-red-800'></button>
             <ol class="px-[30px] w-[80%] py-14 grid grid-cols-1 gap-3">
                 <li class="bg-white hover:bg-purple-600 rounded-xl border-b-2 py-1 px-8 hover:scale-105"><a class="text-[16px] lg:text-[18px] justify-center flex font-gilroy_bold text-red-950 hover:text-slate-900" title="See Header 1" href="#header1">Header 1</a></li>
-                <li class="bg-white hover:bg-purple-600 rounded-xl border-b-2 py-1 px-8 hover:scale-105"><a class="text-[16px] lg:text-[18px] justify-center flex font-gilroy_bold text-red-950 hover:text-slate-900" title="See Header 2" href="#header2">Header 2</a></li>
+                <li class="bg-white hover:bg-purple-600 rounded-xl border-b-2 py-1 px-8 hover:scale-105"><a class="text-[16px] lg:text-[18px] justify-center flex font-gilroy_bold text-red-950 hover:text-slate-900" title="See Header 2" href="./headers/header2.html">Header 2</a></li>
                 <li class="bg-white hover:bg-purple-600 rounded-xl border-b-2 py-1 px-8 hover:scale-105"><a class="text-[16px] lg:text-[18px] justify-center flex font-gilroy_bold text-red-950 hover:text-slate-900" title="See Header 3" href="#header3">Header 3</a></li>
                 <li class="bg-white hover:bg-purple-600 rounded-xl border-b-2 py-1 px-8 hover:scale-105"><a class="text-[16px] lg:text-[18px] justify-center flex font-gilroy_bold text-red-950 hover:text-slate-900" title="See Header 4" href="#header4">Header 4</a></li>
                 <li class="bg-white hover:bg-purple-600 rounded-xl border-b-2 py-1 px-8 hover:scale-105"><a class="text-[16px] lg:text-[18px] justify-center flex font-gilroy_bold text-red-950 hover:text-slate-900" title="See Header 5" href="#header5">Header 5</a></li>
@@ -30,54 +30,52 @@
         </div>
     </div>
      <!-- Header 1  -->
-    <div class="grid grid-cols-10 w-[1000%] overflow-x-hidden">
-        <header>
-            <nav class="flex justify-between items-start lg:items-center p-6 md:p-10 lg:p-12 ">
-                <!-- Nav-logo  -->
-                <span class="w-auto"><a href="#" class=" text-[18px] lg:text-[24px] font-[500] font-gilroy_semibold">Startup 3</a></span>
-                <!-- Nav-menu  -->
-                <div class="w-[70%] lg:w-[65%] relative">
-                    <!-- Menu List  -->
-                    <div id="navList" class="hidden absolute lg:static top-0 right-0 lg:flex justify-between items-center w-[100%]  font-gilroy_semibold mt-16 lg:mt-0 p-8 lg:p-0 bg-slate-300/95 rounded-md lg:bg-transparent lg:text-[#15143966]">
-                        <!-- Nav ul  -->
-                        <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-12">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li class="relative flex gap-1 items-center "> <input type="search" name="search" id="" class="block lg:hidden w-[100%] px-4 py-1 rounded-md " placeholder="Search"><a href="#" title="Search" class="text-[20px] absolute top-1 hover:scale-150 lg:top-0 right-0 "><i class='bx bx-search-alt-2'></i></a></li>
-                        </ul>
-                        <!-- Nav buttons  -->
-                        <div class=" mt-8 lg:mt-0 flex flex-col lg:flex-row lg:space-x-4">
-                            <button type="button" class=" bg-slate-400 ring-2 lg:ring-0 lg:bg-transparent px-6 py-1 lg:py-2 rounded-md">Sign In</button>
-                            <button type="button" class="bg-[#25DAC5] text-white px-6 py-1 lg:py-2 rounded-md lg:rounded-full mt-4 lg:mt-0">Sign In</button>
-                        </div>
-                    </div>
-                    <!-- Menu Icons  -->
-                    <div id="menuIcon" class="block lg:hidden text-[35px] md:text-[45px] absolute right-0 top-0 ">
-                        <!-- Show icon  -->
-                        <button id="showMenu" type="button" title="Menu">
-                            <i class='bx bx-menu ring-1 ring-slate-900 rounded-md bg-slate-300'></i>
-                        </button>
-                        <!-- Close icon  -->
-                        <button id="closeMenu" type="button" title="Close Menu" class="hidden">
-                            <i class='bx bx-x ring-1 ring-slate-900 rounded-md bg-slate-400 text-red-700'></i>
-                        </button>
+    <header>
+        <nav class="flex justify-between items-start lg:items-center p-6 md:p-10 lg:p-12 ">
+            <!-- Nav-logo  -->
+            <span class="w-auto"><a href="#" class=" text-[18px] lg:text-[24px] font-[500] font-gilroy_semibold">Startup 3</a></span>
+            <!-- Nav-menu  -->
+            <div class="w-[70%] lg:w-[65%] relative">
+                <!-- Menu List  -->
+                <div id="navList" class="hidden absolute lg:static top-0 right-0 lg:flex justify-between items-center w-[100%]  font-gilroy_semibold mt-16 lg:mt-0 p-8 lg:p-0 bg-slate-300/95 rounded-md lg:bg-transparent lg:text-[#15143966]">
+                    <!-- Nav ul  -->
+                    <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-12">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="relative flex gap-1 items-center "> <input type="search" name="search" id="" class="block lg:hidden w-[100%] px-4 py-1 rounded-md " placeholder="Search"><a href="#" title="Search" class="text-[20px] absolute top-1 hover:scale-150 lg:top-0 right-0 "><i class='bx bx-search-alt-2'></i></a></li>
+                    </ul>
+                    <!-- Nav buttons  -->
+                    <div class=" mt-8 lg:mt-0 flex flex-col lg:flex-row lg:space-x-4">
+                        <button type="button" class=" bg-slate-400 ring-2 lg:ring-0 lg:bg-transparent px-6 py-1 lg:py-2 rounded-md">Sign In</button>
+                        <button type="button" class="bg-[#25DAC5] text-white px-6 py-1 lg:py-2 rounded-md lg:rounded-full mt-4 lg:mt-0">Sign In</button>
                     </div>
                 </div>
-            </nav>
-            <section class="p-8 lg:p-24 text-start lg:text-center">
-                <div class="w-[100] lg:w-[70%] m-auto mb-8">
-                    <h1 class="text-[35px] leading-10 lg:leading-[86px] mb-8 lg:text-[72px] text-[#1E0E62] font-gilroy_semibold">Startup Framework</h1>
-                    <p class="lg:text-[24px] xl:w-[582px] lg:w-[70%] py-2 m-auto lg:leading-[32px] text-[#15143966]">We made it so beutiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection! </p>
+                <!-- Menu Icons  -->
+                <div id="menuIcon" class="block lg:hidden text-[35px] md:text-[45px] absolute right-0 top-0 ">
+                    <!-- Show icon  -->
+                    <button id="showMenu" type="button" title="Menu">
+                        <i class='bx bx-menu ring-1 ring-slate-900 rounded-md bg-slate-300'></i>
+                    </button>
+                    <!-- Close icon  -->
+                    <button id="closeMenu" type="button" title="Close Menu" class="hidden">
+                        <i class='bx bx-x ring-1 ring-slate-900 rounded-md bg-slate-400 text-red-700'></i>
+                    </button>
                 </div>
-                <div class="flex flex-col gap-4 lg:w-[28%] m-auto">
-                    <button type="button" class="bg-[#25DAC5] text-white px-6 py-1 lg:py-2 rounded-md lg:rounded-full mt-4 lg:mt-0">Purchase Now for $248</button>
-                    <button type="button" class="ring-1 rounded py-1 lg:ring-0 text-[#25DAC5] text-[18px] bg-gray-200 lg:bg-transparent">Learn More</button>
-                </div>
-            </section>
-        </header>
-    </div>
+            </div>
+        </nav>
+        <section class="p-8 lg:p-24 text-start lg:text-center">
+            <div class="w-[100] lg:w-[70%] m-auto mb-8">
+                <h1 class="text-[35px] leading-10 lg:leading-[86px] mb-8 lg:text-[72px] text-[#1E0E62] font-gilroy_semibold">Startup Framework</h1>
+                <p class="lg:text-[24px] xl:w-[582px] lg:w-[70%] py-2 m-auto lg:leading-[32px] text-[#15143966]">We made it so beutiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection! </p>
+            </div>
+            <div class="flex flex-col gap-4 lg:w-[28%] m-auto">
+                <button type="button" class="bg-[#25DAC5] text-white px-6 py-1 lg:py-2 rounded-md lg:rounded-full mt-4 lg:mt-0">Purchase Now for $248</button>
+                <button type="button" class="ring-1 rounded py-1 lg:ring-0 text-[#25DAC5] text-[18px] bg-gray-200 lg:bg-transparent">Learn More</button>
+            </div>
+        </section>
+    </header>
     <script src="./script.js"></script>
 </body>
 </html>
