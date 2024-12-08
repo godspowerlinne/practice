@@ -6,38 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple HTML document with a simple header and paragraph.</p>
-    </div>
-    <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
-    <div>
-        <h2>Contact Information</h2>
-        <p>Phone: 123-456-7890</p>
-        <p>Email: example@example.com</p>
-    </div>
-    <footer>
-        &copy; 2022 My Website. All rights reserved.
-    </footer>
-    <script src="blood.js"></script>
+    <p id="countdown"></p>
+
+<!-- <script>
+    const countdownElement = document.getElementById('countdown');
+    const now = new Date();
+    const tomorrow3pm = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 15, 0, 0);
+    const intervalId = setInterval(() => {
+        const timeLeft = tomorrow3pm - new Date();
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        countdownElement.textContent = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+        if (timeLeft <= 0) {
+            clearInterval(intervalId);
+            countdownElement.textContent = 'Time is up!';
+        }
+    }, 1000);
+</script> -->
+    <script src="./blood.js"></script>
 </body>
 </html>

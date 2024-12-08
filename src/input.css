@@ -48,6 +48,9 @@
 .linnebg {
   background-image: url(./images/Image\ \(10\).png);
 }
+.scale {
+  transform: scale(1.9);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
