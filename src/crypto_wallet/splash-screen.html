@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../output.css">
+</head>
+
+<body class="bg-bg-blue">
+    <!-- Splash Screen  -->
+    <section class="relative p-8 h-[100vh] " data-aos="fade-up" data-aos-anchor-placement="center-center"
+        data-aos-duration="3000">
+        <div class="absolute object-contain z-[-1] top-0 right-[10%] md:w-[80%] w-[100%] m-auto "><img
+                src="./images/splash-screen.png" alt="" class="hidden md:block"></div>
+        <div class="container gap-[5rem] m-auto flex flex-col h-[100%] items-center py-16 ">
+            <!-- Logo  -->
+            <div><img src="./images/Logos.svg" alt=""></div>
+            <!-- Wallet  -->
+            <div><img src="./images/Group 4.svg" alt="wallet"></div>
+            <!-- Get started  -->
+            <div class="flex flex-col items-center justify-center mx-auto w-[100%] md:w-[484px] h-64 ">
+                <p class="text-text-fadedBlue text-[22px]">Welcome to your digital Wallet</p>
+                <button
+                    class="mt-4 p-5 w-full rounded-[20px] cursor-pointer hover:shadow-md hover:shadow-[#fff6] bg-bg-btn  text-text-white">Login</button>
+                <button
+                    class="mt-4 p-5 w-full rounded-[20px] cursor-pointer hover:shadow-md hover:shadow-[#fff6] bg-bg-lightBtn text-text-white">Sign
+                    Up</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

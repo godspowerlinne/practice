@@ -12,6 +12,20 @@ module.exports = {
         gilroy_light: ["Gilroy_Light", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
       },
+      colors: {
+        bg: {
+          btn: "#2027C6",
+          blue: "#3038E5",
+          lightBtn: "#ffffff30",
+        },
+        text: {
+          fadedBlue: "#9DA3F9",
+          white: "#ffffff",
+          inactive: "#648CFF",
+          grey: "#9397B3",
+          darkBlue: "#1E2240",
+        },
+      },
     },
   },
   plugins: [],

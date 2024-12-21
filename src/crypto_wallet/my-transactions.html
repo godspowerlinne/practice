@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Transactions</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../output.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- My Transactions -->
+    <section class="bg-[#272EBB] rounded-[20px] h-[950px] flex">
+        <!-- Left Menu  -->
+        <div class="hidden xl:flex relative p-8 flex-col justify-between h-[950px] w-[312px]">
+            <!-- Logo  -->
+            <a href="#">
+                <img src="./images/tra-Logo.svg" alt="Logo">
+            </a>
+            <!-- Menu -->
+            <div class="flex flex-col gap-8">
+                <!-- Home  -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/phone-toolbar.svg" alt="phone-toolbar">
+                    <p class="text-text-white text-[16px]">Home</p>
+                </a>
+                <!-- Transactions  -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/transaction-icn.svg" alt="Transactions">
+                    <p class="text-text-inactive text-[16px]">Transactions</p>
+                </a>
+                <!-- Address Book  -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/user-icn.svg" alt="Address Book">
+                    <p class="text-text-inactive text-[16px]">Address Book</p>
+                </a>
+                <!-- Share my Profile  -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/share-icn.svg" alt="Share my Profile">
+                    <p class="text-text-inactive text-[16px]">Share my Profile</p>
+                </a>
+                <!-- Get Coins -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/get-icn.svg" alt="Get Coins">
+                    <p class="text-text-inactive text-[16px]">Get Coins</p>
+                </a>
+                <!-- ATM Loyalty  -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/Light blue.svg" alt="ATM Loyalty">
+                    <p class="text-text-inactive text-[16px]">ATM Loyalty</p>
+                </a>
+                <!-- Merchant finder  -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/Light bluedol.svg" alt="Merchant finder">
+                    <p class="text-text-inactive text-[16px]">Merchant finder</p>
+                </a>
+                <!-- Customer support  -->
+                <a href="#"
+                    class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold flex items-center gap-4">
+                    <img src="./images/Vector.svg" alt="Customer support">
+                    <p class="text-text-inactive text-[16px]">Customer support</p>
+                </a>
+            </div>
+            <!-- Chevron left  -->
+            <div
+                class="absolute top-[40%] translate-y-24 translate-x-4 right-0 rotate-[270deg] h-[24px] w-[64px] p-4 bg-bg-blue rounded-t-[100%]">
+                <a href="#"><img src="./images/Gray.svg" alt="Hide" class="m-auto"></a>
+            </div>
+            <!-- Active Wallet -->
+            <div class="flex items-center gap-4 p-4 bg-[#FFFFFF10] hover:bg-[#FFFFFF20] w-fit rounded-[30px]">
+                <div>
+                    <img src="./images/Change Icon Copy 3.svg" alt="Wallet icon">
+                </div>
+                <div>
+                    <small class="text-text-grey">Active</small>
+                    <p class="text-white">Henry’s Wallet</p>
+                </div>
+                <a href="#">
+                    <img src="./images/Gray.svg" alt="Show more">
+                </a>
+            </div>
+        </div>
+        <!-- Active Zone  -->
+        <div class="w-[100%] lg:px-32 bg-bg-blue rounded-[20px]">
+            <!-- Top Bar -->
+            <div class="py-2 lg:py-4">
+                <!-- Iphone base -->
+                <div class="lg:flex justify-between p-4  hidden">
+                    <div class="ml-5 lg:ml-10 self-end">
+                        <img src="./images/9_41.svg" alt="9:41">
+                    </div>
+                    <div>
+                        <img src="./images/Indicator.svg" alt="Indicator">
+                        <div class="flex gap-2 mt-1">
+                            <img src="./images/Mobile Signal.svg" alt="Mobile Signal">
+                            <img src="./images/Wifi.svg" alt="Wifi">
+                            <img src="./images/Battery.svg" alt="Battery">
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation base  -->
+                <div class="flex items-center justify-between p-4">
+                    <a href="#"><img src="./images/laarr.svg" alt="Go back"></a>
+                    <h2 class="text-text-white text-[20px] px-16">Transaction</h2>
+                    <a href="#"><img src="./images/26px Icn.svg" alt="Transactions"></a>
+                </div>
+            </div>
+            <!-- Transactions History -->
+            <div class="bg-white h-[800px]">
+                <div class=" bg-bg-btn p-6 pb-12 rounded-bl-[30px] rounded-br-[30px]">
+                    <!-- Search Bar -->
+                    <div class="relative">
+                        <a href="#"
+                            class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold absolute top-0 left-0 z-10"><img
+                                src="./images/search-icon.svg" alt="Search"></a>
+                        <input type="text" placeholder="Search Contact"
+                            class="bg-transparent absolute top-0 left-0 w-full pl-8">
+                    </div>
+                </div>
+                <!-- Transaction List -->
+                <div class="grid grid-cols-2 items-center border-b-2 border-[#EDEEF7]">
+                    <a href="#"
+                        class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold  py-6 m-auto">Recent
+                        Transactions</a>
+                    <a href="#"
+                        class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold  py-6 m-auto">Scheduled
+                        Payments</a>
+                    <p class="w-full h-1 bg-bg-blue"></p>
+                </div>
+                <!-- Transaction items -->
+                <div class="lg:px-16 pb-4 relative">
+                    <!--Item 1-->
+                    <div class="flex items-center justify-between p-4 lg:p-5 border-b-2 border-[#EDEEF7]">
+                        <div class="flex items-center gap-4">
+                            <!-- Transaction icon  -->
+                            <div>
+                                <img src="./images/Transaction Icons-cre.svg" alt="">
+                            </div>
+                            <!-- Transaction details  -->
+                            <div class="text-text-darkBlue text-[12px]">
+                                <p>23 Nov, 3:15PM</p>
+                                <div class="flex gap-2">
+                                    <h3 class="lg:text-[20px]">+7 500.<span class="text-text-fadedBlue">062000</span>
+                                    </h3>
+                                    <img src="./images/16x Icntrasaction.svg" alt="">
+                                </div>
+                                <p>AACNGXR76IGUU3FAINLZDWXFFN7UGW</p>
+                            </div>
+                        </div>
+                        <!-- Chevron right  -->
+                        <a href="#">
+                            <img src="./images/Right icon 16px.svg" alt="Chevron right">
+                        </a>
+                    </div>
+                    <!--Item 2-->
+                    <div class="flex items-center justify-between p-4 lg:p-5 border-b-2 border-[#EDEEF7]">
+                        <div class="flex items-center gap-4">
+                            <!-- Transaction icon  -->
+                            <div>
+                                <img src="./images/Transaction Icons-deb.svg" alt="">
+                            </div>
+                            <!-- Transaction details  -->
+                            <div class="text-text-darkBlue text-[12px]">
+                                <p>23 Nov, 3:15PM</p>
+                                <div class="flex gap-2">
+                                    <h3 class="lg:text-[20px]">+7 500.<span class="text-text-fadedBlue">062000</span>
+                                    </h3>
+                                    <img src="./images/16x Icntrasaction.svg" alt="">
+                                </div>
+                                <p>AACNGXR76IGUU3FAINLZDWXFFN7UGW</p>
+                            </div>
+                        </div>
+                        <!-- Chevron right  -->
+                        <a href="#">
+                            <img src="./images/Right icon 16px.svg" alt="Chevron right">
+                        </a>
+                    </div>
+                    <!--Item 3-->
+                    <div class="flex items-center justify-between p-4 lg:p-5 border-b-2 border-[#EDEEF7]">
+                        <div class="flex items-center gap-4">
+                            <!-- Transaction icon  -->
+                            <div>
+                                <img src="./images/Transaction Icons-re.svg" alt="">
+                            </div>
+                            <!-- Transaction details  -->
+                            <div class="text-text-darkBlue text-[12px]">
+                                <p>23 Nov, 3:15PM</p>
+                                <div class="flex gap-2">
+                                    <h3 class="lg:text-[20px]">+7 500.<span class="text-text-fadedBlue">062000</span>
+                                    </h3>
+                                    <img src="./images/16x Icntrasaction.svg" alt="">
+                                </div>
+                                <p>AACNGXR76IGUU3FAINLZDWXFFN7UGW</p>
+                            </div>
+                        </div>
+                        <!-- Chevron right  -->
+                        <a href="#">
+                            <img src="./images/Right icon 16px.svg" alt="Chevron right">
+                        </a>
+                    </div>
+                    <!--time-->
+                    <div class="flex justify-center p-4 lg:p-5 border-b-2 border-[#EDEEF7]">
+                        <span class="text-bg-blue m-auto">2 Weeks ago</span>
+                    </div>
+                    <!--Item 4-->
+                    <div class="flex items-center justify-between p-4 lg:p-5 border-b-2 border-[#EDEEF7]">
+                        <div class="flex items-center gap-4">
+                            <!-- Transaction icon  -->
+                            <div>
+                                <img src="./images/Transaction Icons-de.svg" alt="">
+                            </div>
+                            <!-- Transaction details  -->
+                            <div class="text-text-darkBlue text-[12px]">
+                                <p>23 Nov, 3:15PM</p>
+                                <div class="flex gap-2">
+                                    <h3 class="lg:text-[20px]">+7 500.<span class="text-text-fadedBlue">062000</span>
+                                    </h3>
+                                    <img src="./images/16x Icntrasaction.svg" alt="">
+                                </div>
+                                <p>AACNGXR76IGUU3FAINLZDWXFFN7UGW</p>
+                            </div>
+                        </div>
+                        <!-- Chevron right  -->
+                        <a href="#">
+                            <img src="./images/Right icon 16px.svg" alt="Chevron right">
+                        </a>
+                    </div>
+                    <!--Item 5-->
+                    <div class="flex items-center justify-between p-4 lg:p-5 border-b-2 border-[#EDEEF7]">
+                        <div class="flex items-center gap-4">
+                            <!-- Transaction icon  -->
+                            <div>
+                                <img src="./images/Transaction Icons-re.svg" alt="">
+                            </div>
+                            <!-- Transaction details  -->
+                            <div class="text-text-darkBlue text-[12px]">
+                                <p>23 Nov, 3:15PM</p>
+                                <div class="flex gap-2">
+                                    <h3 class="lg:text-[20px]">+7 500.<span class="text-text-fadedBlue">062000</span>
+                                    </h3>
+                                    <img src="./images/16x Icntrasaction.svg" alt="">
+                                </div>
+                                <p>AACNGXR76IGUU3FAINLZDWXFFN7UGW</p>
+                            </div>
+                        </div>
+                        <!-- Chevron right  -->
+                        <a href="#">
+                            <img src="./images/Right icon 16px.svg" alt="Chevron right">
+                        </a>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full flex justify-center">
+                        <a href="#"
+                            class="hover:scale-105 delay-200 hover:translate-y-[-2px] hover:font-bold bg-bg-blue hover:bg-bg-btn text-white p-5 m-auto w-[90%] rounded-[20px] inline-block text-center">Start
+                            new transaction</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Notifications -->
+        <div class="absolute bottom-4 right-4 rotate-180" data-aos="fade-up-left" data-aos-duration="3000"
+            data-aos-delay="1000">
+            <img src="./images/Notifications.svg" alt="Notifications" class="text-red-600">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
